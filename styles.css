@@ -115,9 +115,7 @@ body {
 
 @media (min-width: 900px) {
   .showreel {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-    gap: 2rem;
+    display: block;
+    gap: 0;
   }
 }
