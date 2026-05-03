@@ -79,6 +79,13 @@ body {
   margin-top: 2rem;
 }
 
+.showreel__video:hover,
+.showreel__video video:hover,
+.showreel__video iframe:hover {
+  filter: none;
+  opacity: 1;
+}
+
 .video-placeholder {
   width: 100%;
   min-height: 320px;
