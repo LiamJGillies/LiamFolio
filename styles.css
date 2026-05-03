@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: #5fe3d5;
+}
+
 html,
 body {
   margin: 0;
@@ -40,6 +44,36 @@ body {
   margin: 0;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
+}
+
+.header-divider {
+  margin: 1rem 0 0.75rem;
+  height: 1px;
+  width: 100%;
+  background: #5fe3d5;
+}
+
+.tab-bar {
+  margin-top: 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tab-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #94f9f0;
+  background: rgba(11, 27, 37, 0.75);
+  font-size: 0.95rem;
+}
+
+.tab-item.active,
+.tab-item:hover {
+  background: #0f5b63;
+  color: #e8fbff;
 }
 
 .showreel,
@@ -104,20 +138,40 @@ body {
 }
 
 .project-list {
-  display: grid;
+  display: flex;
   gap: 1rem;
   margin-top: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
 }
 
 .project-card {
-  padding: 1.25rem;
-  border-radius: 16px;
+  min-width: 320px;
+  max-width: 380px;
+  flex: 0 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
   background: #121923;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: inherit;
+  scroll-snap-align: start;
 }
 
-.project-card h3 {
-  margin: 0;
-  font-size: 1.1rem;
+.project-card img {
+  width: 100%;
+  max-height: 240px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.project-label {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e8fbff;
 }
 
 @media (min-width: 900px) {

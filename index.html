@@ -10,18 +10,22 @@
     <header class="site-header">
       <div class="container">
         <h1>Liam Gillies</h1>
+        <div class="header-divider"></div>
+        <nav class="tab-bar" aria-label="Primary">
+          <a class="tab-item active" href="#home">Home</a>
+        </nav>
       </div>
     </header>
 
     <main class="container">
       <section class="showreel">
         <div class="showreel__content">
-          <p class="eyebrow">Showreel</p>
-          <h2>Latest Work</h2>
+          <p class="eyebrow">Featured</p>
+          <h2>Showreel</h2>
           <p></p>
         </div>
         <div class="showreel__video">
-          <video controls width="100%">
+          <video controls poster="thumbnail.png" width="100%">
             <source src="Showreel v1.mp4" type="video/mp4" />
             Your browser doesn’t support HTML5 video.
           </video>
@@ -30,29 +34,35 @@
 
       <section class="projects">
         <p class="eyebrow">Projects</p>
-        <h2>Featured Projects</h2>
+        <h2>Recent Projects</h2>
         <div class="project-list">
-          <article class="project-card">
-            <h3>Project One</h3>
-            <p>
-              Quick description of the first project with a clear focus and
-              outcome.
-            </p>
-          </article>
-          <article class="project-card">
-            <h3>Project Two</h3>
-            <p>
-              Quick description of the second project with a clear focus and
-              outcome.
-            </p>
-          </article>
-          <article class="project-card">
-            <h3>Project Three</h3>
-            <p>
-              Quick description of the third project with a clear focus and
-              outcome.
-            </p>
-          </article>
+          <a
+            class="project-card"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="Project3.png" alt="Project Three" />
+            <div class="project-label">Cuppa Tasks (2026)</div>
+          </a>
+          <a
+            class="project-card"
+            href="https://example.com/project-two"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="project2.png" alt="Project Two" />
+            <div class="project-label">80 Years (2025)</div>
+          </a>
+          <a
+            class="project-card"
+            href="https://example.com/project-three"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="project1.png" alt="Project One" />
+            <div class="project-label">Unending Workshop (2025)</div>
+          </a>
         </div>
       </section>
     </main>
