@@ -89,6 +89,9 @@ body {
   max-width: 40rem;
 }
 
+#featured {
+  color: #5de4d7;
+}
 .eyebrow {
   margin: 0 0 0.75rem;
   color: #5de4d7;
